@@ -1,7 +1,4 @@
 (() => {
-  // ✏️ Change this to your real launch date and time
-  const LAUNCH_DATE = new Date("2026-12-01T09:00:00");
-
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -17,37 +14,6 @@
     el.style.transitionDelay = `${(i % 5) * 90}ms`;
     io.observe(el);
   });
-
-  // Countdown
-  const parts = {
-    days: document.getElementById("cd-days"),
-    hours: document.getElementById("cd-hours"),
-    mins: document.getElementById("cd-mins"),
-    secs: document.getElementById("cd-secs"),
-  };
-  const pad = (n) => String(n).padStart(2, "0");
-  const set = (el, value) => {
-    if (el.textContent === value) return;
-    el.textContent = value;
-    if (!reduceMotion) { el.classList.remove("tick"); void el.offsetWidth; el.classList.add("tick"); }
-  };
-  let timer;
-  const update = () => {
-    const diff = LAUNCH_DATE - Date.now();
-    if (diff <= 0) {
-      clearInterval(timer);
-      document.getElementById("countdown").hidden = true;
-      document.getElementById("launched").hidden = false;
-      return;
-    }
-    const s = Math.floor(diff / 1000);
-    set(parts.days, pad(Math.floor(s / 86400)));
-    set(parts.hours, pad(Math.floor((s % 86400) / 3600)));
-    set(parts.mins, pad(Math.floor((s % 3600) / 60)));
-    set(parts.secs, pad(s % 60));
-  };
-  update();
-  timer = setInterval(update, 1000);
 
   // Waitlist form (front-end only — connect to Mailchimp, Klaviyo, Formspree, etc. to collect emails)
   const form = document.getElementById("waitlist");

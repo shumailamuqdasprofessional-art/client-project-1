@@ -31,17 +31,7 @@
 .soon__sub { color: var(--muted); font-size: clamp(1.02rem, 1.6vw, 1.18rem); font-weight: 300; max-width: 520px; }
 .soon__sub strong { color: var(--rose-dark); font-weight: 600; }
 
-/* Countdown */
-.countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 1.6vw, 14px); margin: 2rem 0; max-width: 520px; }
-.countdown__box { padding: clamp(12px, 2.4vw, 22px) 4px; text-align: center; border-radius: 6px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
-.countdown__box strong { display: block; font: 700 clamp(1.8rem, 4.6vw, 2.9rem) / 1 var(--display); font-variant-numeric: tabular-nums; color: var(--text); }
-.countdown__box span { display: block; margin-top: 0.4rem; font: 600 clamp(0.6rem, 1.4vw, 0.72rem) var(--display); text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); }
-.countdown__box strong.tick { animation: tick 0.45s var(--ease); }
-@keyframes tick { from { transform: translateY(-6px); opacity: 0.3; } }
-.countdown__live { font: 700 1.4rem var(--display); margin: 2rem 0; }
-.countdown__live a { color: var(--rose); }
-
-.soon .subscribe { max-width: 520px; }
+.soon .subscribe { max-width: 520px; margin-top: 2rem; }
 .soon__status { margin: 0.9rem 0 0; font-size: 0.9rem; color: var(--muted); min-height: 1.4em; }
 .soon__status strong { color: var(--text); }
 .soon__status.is-success { color: var(--rose-dark); }
@@ -193,7 +183,7 @@
 
 @media (max-width: 960px) {
   .soon__main { grid-template-columns: minmax(0, 1fr); text-align: center; }
-  .soon__sub, .countdown, .soon .subscribe { margin-inline: auto; }
+  .soon__sub, .soon .subscribe { margin-inline: auto; }
   .soon__art { height: 420px; order: -1; }
 }
 @media (max-width: 560px) {
