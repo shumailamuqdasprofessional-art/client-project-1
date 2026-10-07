@@ -24,3 +24,12 @@ python3 -m http.server 8000
 - Brand name, copy and contact details: `index.html`
 - Colours and fonts: CSS variables at the top of `styles.css`
 - The contact form is front-end only — connect it to a form service (e.g. Formspree) or your backend to receive messages.
+
+## Coming Soon page
+`coming-soon.html` is a launch page with a live countdown, "Notify me" email signup, progress bar, feature teasers and social links.
+
+- Change the launch date: `LAUNCH_DATE` at the top of `coming-soon.js`
+- Change the progress %: `data-value="87"` in `coming-soon.html`
+- When the countdown ends, the page shows a link into the full website.
+- The email form is front-end only — connect it to Mailchimp, Formspree or similar to collect emails.
+- To make it your homepage while you finish the site, rename it to `index.html` (and the main page to something else).

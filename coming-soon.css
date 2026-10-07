@@ -1,0 +1,58 @@
+/* Coming Soon page — builds on the tokens and components in styles.css */
+.soon { min-height: 100vh; display: flex; flex-direction: column; position: relative; overflow-x: hidden; }
+.soon #stars { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; }
+.soon .hero__orb { position: fixed; z-index: 0; }
+.soon > *:not(canvas):not(.hero__orb) { position: relative; z-index: 1; }
+
+.soon__top { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; }
+
+.soon__main { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: clamp(40px, 8vh, 90px) 0 60px; }
+.soon__title { font-size: clamp(2.6rem, 8vw, 5.8rem); font-weight: 700; margin-bottom: 0.35em; }
+.soon__sub { color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.2rem); max-width: 580px; }
+
+/* Countdown */
+.countdown { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 2vw, 18px); margin: 2.5rem 0; width: min(620px, 100%); }
+.countdown__box { padding: clamp(14px, 3vw, 26px) 6px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.countdown__box strong { display: block; font: 700 clamp(1.9rem, 6vw, 3.4rem) / 1 "Space Grotesk", sans-serif; font-variant-numeric: tabular-nums; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.countdown__box span { display: block; margin-top: 0.5rem; font-size: clamp(0.65rem, 1.6vw, 0.8rem); text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
+.countdown__box strong.tick { animation: tick 0.4s var(--ease); }
+@keyframes tick { from { transform: translateY(-6px); opacity: 0.4; } }
+.countdown__live { font: 600 1.3rem "Space Grotesk", sans-serif; margin: 2rem 0; }
+.countdown__live a { color: var(--teal); }
+
+/* Notify form */
+.notify { display: flex; gap: 8px; width: min(520px, 100%); padding: 6px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); transition: border-color 0.2s, box-shadow 0.2s; }
+.notify:focus-within { border-color: var(--violet); box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.2); }
+.notify input { flex: 1; min-width: 0; background: transparent; border: 0; outline: none; color: var(--text); font: 400 1rem "Inter", sans-serif; padding: 0 1rem; }
+.notify input::placeholder { color: var(--muted); }
+.notify.is-invalid { border-color: var(--pink); }
+.notify__status { margin: 0.9rem 0 0; font-size: 0.88rem; color: var(--muted); min-height: 1.4em; }
+.notify__status.is-success { color: var(--teal); }
+.notify__status.is-error { color: var(--pink); }
+@media (max-width: 480px) {
+  .notify { flex-direction: column; border-radius: 20px; }
+  .notify input { padding: 0.9rem 1rem; }
+}
+
+/* Progress */
+.progress { width: min(520px, 100%); margin-top: 3rem; text-align: left; }
+.progress__label { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.6rem; }
+.progress__label span:last-child { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+.progress__bar { height: 8px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); overflow: hidden; }
+.progress__bar span { display: block; height: 100%; width: 0; border-radius: inherit; background: var(--grad); box-shadow: 0 0 16px rgba(0, 224, 198, 0.6); transition: width 1.8s var(--ease); }
+
+/* Features */
+.soon__features { padding: 40px 0 80px; }
+.soon__features .eyebrow { text-align: center; margin-bottom: 2rem; }
+
+/* Footer */
+.soon__footer { display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: 32px 0 40px; border-top: 1px solid var(--border); text-align: center; }
+.soon__footer p { margin: 0; font-size: 0.9rem; }
+.soon__footer a:hover { color: var(--teal); }
+.socials { display: flex; gap: 12px; }
+.socials a { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s var(--ease), border-color 0.2s; }
+.socials a:hover { transform: translateY(-3px); border-color: var(--teal); }
+.socials svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.socials svg .fill { fill: currentColor; stroke: none; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
