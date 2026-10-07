@@ -6,9 +6,9 @@
       desc: "Deep, lasting moisture for dry and thirsty skin.",
       ingredients: ["Hyaluronic Acid", "Ceramides", "Panthenol"],
       products: [
-        { name: "Hyaluronic Toner", label: "Hyaluronic<br />Toner", type: "Toner · 150ml", note: "Floods skin with lightweight hydration.", price: "Rs 3,200", pack: "toner" },
-        { name: "Ceramide Barrier Cream", label: "Ceramide Cream", type: "Moisturiser · 50ml", note: "Rich moisture that locks in hydration.", price: "Rs 3,900", pack: "jar" },
-        { name: "Hydrating Sheet Masks", label: "Hydra Mask", type: "Sheet masks · 10 pack", note: "Ten minutes to plump, dewy skin.", price: "Rs 2,500", pack: "mask" },
+        { name: "Hyaluronic Toner", label: "Hyaluronic<br />Toner", type: "Toner · 150ml", note: "Floods skin with lightweight hydration.", pack: "toner" },
+        { name: "Ceramide Barrier Cream", label: "Ceramide Cream", type: "Moisturiser · 50ml", note: "Rich moisture that locks in hydration.", pack: "jar" },
+        { name: "Hydrating Sheet Masks", label: "Hydra Mask", type: "Sheet masks · 10 pack", note: "Ten minutes to plump, dewy skin.", pack: "mask" },
       ],
     },
     {
@@ -16,9 +16,9 @@
       desc: "Firm, smooth and renew for youthful-looking skin.",
       ingredients: ["Retinol", "Peptides", "Collagen"],
       products: [
-        { name: "Retinol Night Serum", label: "Retinol<br />Serum", type: "Serum · 30ml", note: "Smooths the look of fine lines overnight.", price: "Rs 4,800", pack: "serum" },
-        { name: "Collagen Firming Cream", label: "Collagen Cream", type: "Moisturiser · 50ml", note: "Helps skin feel firmer and bouncier.", price: "Rs 4,500", pack: "jar" },
-        { name: "Peptide Eye Cream", label: "Peptide<br />Eye", type: "Eye cream · 20ml", note: "Softens the look of tired eyes.", price: "Rs 3,600", pack: "tube" },
+        { name: "Retinol Night Serum", label: "Retinol<br />Serum", type: "Serum · 30ml", note: "Smooths the look of fine lines overnight.", pack: "serum" },
+        { name: "Collagen Firming Cream", label: "Collagen Cream", type: "Moisturiser · 50ml", note: "Helps skin feel firmer and bouncier.", pack: "jar" },
+        { name: "Peptide Eye Cream", label: "Peptide<br />Eye", type: "Eye cream · 20ml", note: "Softens the look of tired eyes.", pack: "tube" },
       ],
     },
     {
@@ -26,9 +26,9 @@
       desc: "Calm breakouts and keep pores clear.",
       ingredients: ["Salicylic Acid (BHA)", "Tea Tree", "Centella"],
       products: [
-        { name: "BHA Clear Cleanser", label: "BHA<br />Cleanser", type: "Cleanser · 150ml", note: "Gently clears oil and unclogs pores.", price: "Rs 2,800", pack: "pump" },
-        { name: "Tea Tree Spot Serum", label: "Tea Tree<br />Serum", type: "Serum · 20ml", note: "Targets breakouts and calms redness.", price: "Rs 2,900", pack: "serum" },
-        { name: "Pimple Patches", label: "Spot Patch", type: "Patches · 36 pcs", note: "Protect and flatten spots overnight.", price: "Rs 1,500", pack: "mask" },
+        { name: "BHA Clear Cleanser", label: "BHA<br />Cleanser", type: "Cleanser · 150ml", note: "Gently clears oil and unclogs pores.", pack: "pump" },
+        { name: "Tea Tree Spot Serum", label: "Tea Tree<br />Serum", type: "Serum · 20ml", note: "Targets breakouts and calms redness.", pack: "serum" },
+        { name: "Pimple Patches", label: "Spot Patch", type: "Patches · 36 pcs", note: "Protect and flatten spots overnight.", pack: "mask" },
       ],
     },
     {
@@ -36,9 +36,9 @@
       desc: "Light, invisible daily protection with SPF 50+.",
       ingredients: ["SPF 50+", "PA++++", "No white cast"],
       products: [
-        { name: "Daily Sun Cream SPF 50+", label: "Sun Cream<br />SPF 50+", type: "Sunscreen · 50ml", note: "Weightless everyday protection.", price: "Rs 3,300", pack: "tube" },
-        { name: "Tone-Up Sun Cream SPF 50+", label: "Tone-Up<br />SPF 50+", type: "Sunscreen · 50ml", note: "Protects and brightens in one step.", price: "Rs 3,400", pack: "tube" },
-        { name: "Sun Cushion SPF 50+", label: "Sun Cushion", type: "Cushion · 15g", note: "Easy top-ups over makeup.", price: "Rs 3,800", pack: "cushion" },
+        { name: "Daily Sun Cream SPF 50+", label: "Sun Cream<br />SPF 50+", type: "Sunscreen · 50ml", note: "Weightless everyday protection.", pack: "tube" },
+        { name: "Tone-Up Sun Cream SPF 50+", label: "Tone-Up<br />SPF 50+", type: "Sunscreen · 50ml", note: "Protects and brightens in one step.", pack: "tube" },
+        { name: "Sun Cushion SPF 50+", label: "Sun Cushion", type: "Cushion · 15g", note: "Easy top-ups over makeup.", pack: "cushion" },
       ],
     },
     {
@@ -46,9 +46,9 @@
       desc: "Even tone and a radiant, glass-skin glow.",
       ingredients: ["Vitamin C", "Niacinamide", "Rice Extract"],
       products: [
-        { name: "Vitamin C Glow Serum", label: "Vitamin C<br />Serum", type: "Serum · 30ml", note: "Brightens dull skin for a radiant glow.", price: "Rs 4,200", pack: "serum" },
-        { name: "Rice Glow Essence", label: "Rice<br />Essence", type: "Essence · 150ml", note: "The secret to soft, glass-like skin.", price: "Rs 3,700", pack: "toner" },
-        { name: "Niacinamide Toner", label: "Niacinamide<br />Toner", type: "Toner · 150ml", note: "Evens tone and refines the look of pores.", price: "Rs 3,100", pack: "pump" },
+        { name: "Vitamin C Glow Serum", label: "Vitamin C<br />Serum", type: "Serum · 30ml", note: "Brightens dull skin for a radiant glow.", pack: "serum" },
+        { name: "Rice Glow Essence", label: "Rice<br />Essence", type: "Essence · 150ml", note: "The secret to soft, glass-like skin.", pack: "toner" },
+        { name: "Niacinamide Toner", label: "Niacinamide<br />Toner", type: "Toner · 150ml", note: "Evens tone and refines the look of pores.", pack: "pump" },
       ],
     },
     {
@@ -56,9 +56,9 @@
       desc: "Gentle care to soothe redness and support your skin barrier.",
       ingredients: ["Centella (Cica)", "Mugwort", "Heartleaf"],
       products: [
-        { name: "Cica Calming Cream", label: "Cica Cream", type: "Moisturiser · 50ml", note: "Soothes and comforts irritated skin.", price: "Rs 3,800", pack: "jar" },
-        { name: "Mugwort Cleansing Foam", label: "Mugwort<br />Foam", type: "Cleanser · 150ml", note: "A soft, low-pH wash for delicate skin.", price: "Rs 2,700", pack: "tube" },
-        { name: "Heartleaf Soothing Toner", label: "Heartleaf<br />Toner", type: "Toner · 150ml", note: "Calms redness and refreshes.", price: "Rs 3,000", pack: "toner" },
+        { name: "Cica Calming Cream", label: "Cica Cream", type: "Moisturiser · 50ml", note: "Soothes and comforts irritated skin.", pack: "jar" },
+        { name: "Mugwort Cleansing Foam", label: "Mugwort<br />Foam", type: "Cleanser · 150ml", note: "A soft, low-pH wash for delicate skin.", pack: "tube" },
+        { name: "Heartleaf Soothing Toner", label: "Heartleaf<br />Toner", type: "Toner · 150ml", note: "Calms redness and refreshes.", pack: "toner" },
       ],
     },
   ];
@@ -119,7 +119,7 @@
           <p class="product__type">${p.type}</p>
           <h3>${p.name}</h3>
           <p class="product__note">${p.note}</p>
-          <div class="product__foot"><span class="price">${p.price}</span><button class="btn btn--small add" data-name="${p.name}">Add to bag</button></div>
+          <div class="product__foot"><button class="btn btn--small add" data-name="${p.name}">Add to bag</button></div>
         </div>
       </article>`).join("");
   };
