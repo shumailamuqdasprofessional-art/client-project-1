@@ -3,234 +3,239 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nova Studio — Digital Experiences That Move People</title>
-  <meta name="description" content="Nova Studio designs and builds world-class websites, brands and digital products." />
-  <meta name="theme-color" content="#07070c" />
+  <title>Velora Skin — Clean Skincare for Your Natural Glow</title>
+  <meta name="description" content="Gentle, effective skincare made with ingredients your skin loves. Serums, moisturisers, cleansers and SPF for every skin type." />
+  <meta name="theme-color" content="#fbf7f3" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c5cff'/><stop offset='1' stop-color='%2300e0c6'/></linearGradient></defs><circle cx='16' cy='16' r='14' fill='url(%23g)'/></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23e8b4a6'/><path d='M10 11l6 11 6-11' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
 </head>
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="announce">Free shipping on orders over $50 &nbsp;·&nbsp; <a href="coming-soon.html">Launching December 1 →</a></div>
 
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="#top" class="logo"><span class="logo__dot"></span>Nova<span class="muted">Studio</span></a>
+      <a href="#top" class="logo">Velora<span>skin</span></a>
       <nav class="nav__links" id="navLinks" aria-label="Main">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#process">Process</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact" class="btn btn--small">Start a project</a>
+        <a href="#shop">Shop</a>
+        <a href="#quiz">Skin quiz</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#reviews">Reviews</a>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+      <div class="nav__actions">
+        <button class="bag" id="bagBtn" aria-label="Shopping bag, 0 items">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="bag__count" id="bagCount">0</span>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <canvas id="stars" aria-hidden="true"></canvas>
-      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
-      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
-      <div class="container hero__content">
-        <p class="pill reveal"><span class="pill__dot"></span> Now booking projects for 2027</p>
-        <h1 class="hero__title reveal">
-          We craft digital<br />
-          experiences that<br />
-          <span class="gradient-text" id="rotator">move people.</span>
-        </h1>
-        <p class="hero__sub reveal">Strategy, design and engineering for ambitious brands. We turn bold ideas into websites and products people love to use.</p>
-        <div class="hero__cta reveal">
-          <a href="#contact" class="btn">Start your project <span aria-hidden="true">→</span></a>
-          <a href="#work" class="btn btn--ghost">See our work</a>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Clean · Vegan · Cruelty-free</p>
+          <h1 class="reveal">Skin that <em>glows,</em><br />naturally.</h1>
+          <p class="hero__sub reveal">Gentle, effective skincare made with ingredients your skin actually loves. Simple routines, real results — for every skin type.</p>
+          <div class="hero__cta reveal">
+            <a href="#shop" class="btn">Shop bestsellers</a>
+            <a href="#quiz" class="btn btn--ghost">Find my routine</a>
+          </div>
+          <div class="hero__trust reveal">
+            <div class="stars" aria-label="Rated 4.9 out of 5">★★★★★</div>
+            <span><strong>4.9</strong> from 2,000+ happy customers</span>
+          </div>
         </div>
-        <div class="stats reveal">
-          <div><strong data-count="240">0</strong><span>+ projects launched</span></div>
-          <div><strong data-count="98">0</strong><span>% client retention</span></div>
-          <div><strong data-count="32">0</strong><span>design awards</span></div>
+
+        <div class="hero__art reveal" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="pack pack--pump hero__p1" style="--c1:#f4d9cf;--c2:#e8b4a6"><span>Cloud<br />Cleanser</span></div>
+          <div class="pack pack--serum hero__p2" style="--c1:#f7e3b8;--c2:#e2b86b"><span>Glow<br />Serum</span></div>
+          <div class="pack pack--jar hero__p3" style="--c1:#e3eadf;--c2:#b9c8b0"><span>Velvet Cream</span></div>
+          <div class="float-tag float-tag--1">💧 Hyaluronic acid</div>
+          <div class="float-tag float-tag--2">🍊 Vitamin C</div>
+          <div class="float-tag float-tag--3">🌿 Fragrance-free</div>
         </div>
       </div>
     </section>
 
     <!-- MARQUEE -->
-    <section class="marquee" aria-label="Trusted by">
+    <section class="marquee" aria-label="Benefits">
       <div class="marquee__track">
-        <span>Lumen</span><span>Orbit</span><span>Halcyon</span><span>Northwind</span><span>Vertex</span><span>Polaris</span><span>Kinetic</span><span>Aurora</span>
-        <span aria-hidden="true">Lumen</span><span aria-hidden="true">Orbit</span><span aria-hidden="true">Halcyon</span><span aria-hidden="true">Northwind</span><span aria-hidden="true">Vertex</span><span aria-hidden="true">Polaris</span><span aria-hidden="true">Kinetic</span><span aria-hidden="true">Aurora</span>
+        <span>Hydrating</span><span>✦</span><span>Brightening</span><span>✦</span><span>Calming</span><span>✦</span><span>Fragrance-free</span><span>✦</span><span>Non-comedogenic</span><span>✦</span><span>Vegan</span><span>✦</span>
+        <span aria-hidden="true">Hydrating</span><span aria-hidden="true">✦</span><span aria-hidden="true">Brightening</span><span aria-hidden="true">✦</span><span aria-hidden="true">Calming</span><span aria-hidden="true">✦</span><span aria-hidden="true">Fragrance-free</span><span aria-hidden="true">✦</span><span aria-hidden="true">Non-comedogenic</span><span aria-hidden="true">✦</span><span aria-hidden="true">Vegan</span><span aria-hidden="true">✦</span>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="section" id="services">
+    <!-- SHOP -->
+    <section class="section" id="shop">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow">What we do</p>
-          <h2>Everything you need to<br />launch and grow.</h2>
+          <p class="eyebrow">Bestsellers</p>
+          <h2>Loved by skin, <em>everywhere.</em></h2>
         </div>
-        <div class="grid grid--3">
-          <article class="card tilt reveal">
-            <div class="card__icon">✦</div>
-            <h3>Brand Identity</h3>
-            <p>Logos, visual systems and voice that make you instantly recognisable and impossible to forget.</p>
+        <div class="products">
+          <article class="product reveal">
+            <div class="product__img" style="--bg:#fbeee3">
+              <span class="badge">Bestseller</span>
+              <div class="pack pack--serum" style="--c1:#f7e3b8;--c2:#e2b86b"><span>Glow<br />Serum</span></div>
+            </div>
+            <div class="product__body">
+              <p class="product__type">Vitamin C Serum · 30ml</p>
+              <h3>Glow Serum</h3>
+              <div class="product__rating"><span class="stars">★★★★★</span> 412 reviews</div>
+              <div class="product__foot"><span class="price">$38</span><button class="btn btn--small add" data-name="Glow Serum">Add to bag</button></div>
+            </div>
           </article>
-          <article class="card tilt reveal">
-            <div class="card__icon">◐</div>
-            <h3>Web Design</h3>
-            <p>Beautiful, conversion-focused websites with motion and detail that feel truly premium.</p>
+          <article class="product reveal">
+            <div class="product__img" style="--bg:#eef2ea">
+              <span class="badge badge--sage">New</span>
+              <div class="pack pack--jar" style="--c1:#e3eadf;--c2:#b9c8b0"><span>Velvet Cream</span></div>
+            </div>
+            <div class="product__body">
+              <p class="product__type">Ceramide Moisturiser · 50ml</p>
+              <h3>Velvet Cream</h3>
+              <div class="product__rating"><span class="stars">★★★★★</span> 286 reviews</div>
+              <div class="product__foot"><span class="price">$42</span><button class="btn btn--small add" data-name="Velvet Cream">Add to bag</button></div>
+            </div>
           </article>
-          <article class="card tilt reveal">
-            <div class="card__icon">⌘</div>
-            <h3>Development</h3>
-            <p>Fast, accessible, SEO-ready builds on modern stacks — engineered to scale with you.</p>
+          <article class="product reveal">
+            <div class="product__img" style="--bg:#f9e9e4">
+              <div class="pack pack--pump" style="--c1:#f4d9cf;--c2:#e8b4a6"><span>Cloud<br />Cleanser</span></div>
+            </div>
+            <div class="product__body">
+              <p class="product__type">Gentle Gel Cleanser · 150ml</p>
+              <h3>Cloud Cleanser</h3>
+              <div class="product__rating"><span class="stars">★★★★☆</span> 198 reviews</div>
+              <div class="product__foot"><span class="price">$24</span><button class="btn btn--small add" data-name="Cloud Cleanser">Add to bag</button></div>
+            </div>
           </article>
-          <article class="card tilt reveal">
-            <div class="card__icon">◇</div>
-            <h3>E-commerce</h3>
-            <p>Online stores that turn browsers into buyers, with seamless checkout and inventory.</p>
+          <article class="product reveal">
+            <div class="product__img" style="--bg:#f2ede6">
+              <div class="pack pack--tube" style="--c1:#ffffff;--c2:#e9dfd4"><span>Daily<br />SPF 50</span></div>
+            </div>
+            <div class="product__body">
+              <p class="product__type">Invisible Sunscreen · 50ml</p>
+              <h3>Daily Shield SPF 50</h3>
+              <div class="product__rating"><span class="stars">★★★★★</span> 355 reviews</div>
+              <div class="product__foot"><span class="price">$32</span><button class="btn btn--small add" data-name="Daily Shield SPF 50">Add to bag</button></div>
+            </div>
           </article>
-          <article class="card tilt reveal">
-            <div class="card__icon">↗</div>
-            <h3>Growth & SEO</h3>
-            <p>Data-driven optimisation, content and search strategy that compounds month after month.</p>
-          </article>
-          <article class="card tilt reveal">
-            <div class="card__icon">◎</div>
-            <h3>Product Design</h3>
-            <p>UX research, prototyping and UI for apps and SaaS products people genuinely enjoy.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section class="section" id="work">
-      <div class="container">
-        <div class="section__head section__head--row reveal">
-          <div>
-            <p class="eyebrow">Selected work</p>
-            <h2>Projects we're proud of.</h2>
-          </div>
-          <div class="filters" role="tablist" aria-label="Filter projects">
-            <button class="filter is-active" data-filter="all">All</button>
-            <button class="filter" data-filter="web">Web</button>
-            <button class="filter" data-filter="brand">Brand</button>
-            <button class="filter" data-filter="app">App</button>
-          </div>
-        </div>
-        <div class="work">
-          <a class="project project--lg reveal" data-cat="web" href="#contact">
-            <div class="project__art art-1"><span>Lumen</span></div>
-            <div class="project__meta"><h3>Lumen Energy</h3><p>Website · Development</p></div>
-          </a>
-          <a class="project reveal" data-cat="brand" href="#contact">
-            <div class="project__art art-2"><span>Orbit</span></div>
-            <div class="project__meta"><h3>Orbit Coffee</h3><p>Brand identity</p></div>
-          </a>
-          <a class="project reveal" data-cat="app" href="#contact">
-            <div class="project__art art-3"><span>Halcyon</span></div>
-            <div class="project__meta"><h3>Halcyon Health</h3><p>Mobile app · UX</p></div>
-          </a>
-          <a class="project project--lg reveal" data-cat="web" href="#contact">
-            <div class="project__art art-4"><span>Vertex</span></div>
-            <div class="project__meta"><h3>Vertex Finance</h3><p>Website · E-commerce</p></div>
-          </a>
-          <a class="project reveal" data-cat="brand" href="#contact">
-            <div class="project__art art-5"><span>Polaris</span></div>
-            <div class="project__meta"><h3>Polaris Travel</h3><p>Brand · Web</p></div>
-          </a>
-          <a class="project project--lg reveal" data-cat="app" href="#contact">
-            <div class="project__art art-6"><span>Kinetic</span></div>
-            <div class="project__meta"><h3>Kinetic Fitness</h3><p>Product design</p></div>
-          </a>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section class="section" id="process">
+    <!-- QUIZ / ROUTINE FINDER -->
+    <section class="section section--tint" id="quiz">
+      <div class="container quiz">
+        <div class="quiz__intro reveal">
+          <p class="eyebrow">Skin quiz</p>
+          <h2>What's your <em>skin type?</em></h2>
+          <p class="muted">Pick the one that sounds most like you and we'll build your perfect 3-step routine.</p>
+          <div class="chips" role="tablist" aria-label="Skin type">
+            <button class="chip is-active" role="tab" aria-selected="true" data-type="dry">Dry</button>
+            <button class="chip" role="tab" aria-selected="false" data-type="oily">Oily</button>
+            <button class="chip" role="tab" aria-selected="false" data-type="combo">Combination</button>
+            <button class="chip" role="tab" aria-selected="false" data-type="sensitive">Sensitive</button>
+          </div>
+        </div>
+        <div class="routine reveal" id="routine" role="tabpanel" aria-live="polite">
+          <p class="routine__desc" id="routineDesc"></p>
+          <ol class="routine__steps" id="routineSteps"></ol>
+          <a href="#shop" class="btn btn--block">Shop my routine</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INGREDIENTS -->
+    <section class="section" id="ingredients">
       <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">How we work</p>
-          <h2>A simple process.<br />Remarkable results.</h2>
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow">Hero ingredients</p>
+          <h2>Powered by <em>nature & science.</em></h2>
+        </div>
+        <div class="ingredients">
+          <article class="ing reveal"><div class="ing__icon" style="--c:#f7e3b8">🍊</div><h3>Vitamin C</h3><p>Brightens dull skin and helps even out tone for a radiant glow.</p></article>
+          <article class="ing reveal"><div class="ing__icon" style="--c:#dcebf3">💧</div><h3>Hyaluronic Acid</h3><p>Holds moisture in your skin for plump, bouncy hydration all day.</p></article>
+          <article class="ing reveal"><div class="ing__icon" style="--c:#f4d9cf">✨</div><h3>Niacinamide</h3><p>Helps refine the look of pores and balance oily areas.</p></article>
+          <article class="ing reveal"><div class="ing__icon" style="--c:#e3eadf">🌿</div><h3>Ceramides</h3><p>Support your skin's natural barrier so it stays soft and calm.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTINE STEPS -->
+    <section class="section section--rose">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow">The ritual</p>
+          <h2>Four steps to <em>happy skin.</em></h2>
         </div>
         <ol class="steps">
-          <li class="step reveal"><span class="step__num">01</span><h3>Discover</h3><p>We dig into your goals, audience and competitors to find the winning angle.</p></li>
-          <li class="step reveal"><span class="step__num">02</span><h3>Design</h3><p>Concepts, prototypes and polish — you're involved and in control at every step.</p></li>
-          <li class="step reveal"><span class="step__num">03</span><h3>Build</h3><p>Pixel-perfect, lightning-fast development with rigorous testing on every device.</p></li>
-          <li class="step reveal"><span class="step__num">04</span><h3>Launch & grow</h3><p>We go live, measure everything and keep improving long after launch day.</p></li>
+          <li class="step reveal"><span class="step__num">01</span><h3>Cleanse</h3><p>Wash away the day without stripping your skin.</p></li>
+          <li class="step reveal"><span class="step__num">02</span><h3>Treat</h3><p>A few drops of serum target your skin's needs.</p></li>
+          <li class="step reveal"><span class="step__num">03</span><h3>Moisturise</h3><p>Lock in hydration for soft, smooth skin.</p></li>
+          <li class="step reveal"><span class="step__num">04</span><h3>Protect</h3><p>Finish every morning with SPF — the #1 anti-ageing step.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="section section--tint">
+    <!-- PROMISES -->
+    <section class="promises">
+      <div class="container promises__grid">
+        <div class="reveal"><span>🐰</span>Cruelty-free</div>
+        <div class="reveal"><span>🌱</span>100% vegan</div>
+        <div class="reveal"><span>♻️</span>Recyclable packaging</div>
+        <div class="reveal"><span>🚫</span>No parabens or sulphates</div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
       <div class="container">
-        <div class="section__head reveal">
-          <p class="eyebrow">Kind words</p>
-          <h2>Loved by founders<br />and teams.</h2>
+        <div class="section__head section__head--center reveal">
+          <p class="eyebrow">Reviews</p>
+          <h2>Real people, <em>real glow.</em></h2>
         </div>
-        <div class="testimonials reveal" id="testimonials">
-          <figure class="quote is-active">
-            <blockquote>“Nova completely transformed our brand. Our new site doubled conversions in the first month — the best investment we've made.”</blockquote>
-            <figcaption><span class="avatar">AR</span><div><strong>Amara Reyes</strong><span>CEO, Lumen Energy</span></div></figcaption>
+        <div class="reviews">
+          <figure class="review reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>“My skin has never felt this soft. The Glow Serum is now the first thing I reach for every morning.”</blockquote>
+            <figcaption><span class="avatar">AM</span><div><strong>Aisha M.</strong><span>Combination skin</span></div></figcaption>
           </figure>
-          <figure class="quote">
-            <blockquote>“Incredible attention to detail. They understood our vision better than we did and delivered ahead of schedule.”</blockquote>
-            <figcaption><span class="avatar">DK</span><div><strong>Daniel Kim</strong><span>Founder, Orbit Coffee</span></div></figcaption>
+          <figure class="review reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>“Finally a moisturiser that doesn't break me out. Gentle, light and it smells of nothing — perfect.”</blockquote>
+            <figcaption><span class="avatar">SL</span><div><strong>Sophie L.</strong><span>Sensitive skin</span></div></figcaption>
           </figure>
-          <figure class="quote">
-            <blockquote>“Working with Nova felt like having a world-class product team in-house. Our users constantly compliment the app.”</blockquote>
-            <figcaption><span class="avatar">SN</span><div><strong>Sara Novak</strong><span>CPO, Halcyon Health</span></div></figcaption>
+          <figure class="review reveal">
+            <div class="stars">★★★★★</div>
+            <blockquote>“The SPF is truly invisible — no white cast at all. I wear it every single day now.”</blockquote>
+            <figcaption><span class="avatar">NK</span><div><strong>Nadia K.</strong><span>Oily skin</span></div></figcaption>
           </figure>
-          <div class="dots" role="tablist" aria-label="Choose testimonial">
-            <button class="dot is-active" aria-label="Testimonial 1"></button>
-            <button class="dot" aria-label="Testimonial 2"></button>
-            <button class="dot" aria-label="Testimonial 3"></button>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- PRICING -->
-    <section class="section" id="pricing">
+    <!-- NEWSLETTER -->
+    <section class="section section--tight">
       <div class="container">
-        <div class="section__head section__head--center reveal">
-          <p class="eyebrow">Pricing</p>
-          <h2>Transparent plans.</h2>
-          <div class="toggle">
-            <span>One-off</span>
-            <button class="switch" id="billing" role="switch" aria-checked="false" aria-label="Toggle monthly retainer"><span></span></button>
-            <span>Monthly retainer</span>
+        <div class="club reveal">
+          <div>
+            <p class="eyebrow">The Glow Club</p>
+            <h2>Get <em>10% off</em> your first order.</h2>
+            <p class="muted">Plus skincare tips, early access to new launches and members-only offers.</p>
           </div>
-        </div>
-        <div class="grid grid--3 pricing">
-          <div class="plan reveal">
-            <h3>Starter</h3>
-            <p class="plan__desc">For new brands getting online.</p>
-            <p class="plan__price"><span data-once="1,900" data-monthly="490">1,900</span><small class="plan__unit">USD</small></p>
-            <ul><li>5-page responsive website</li><li>Basic SEO setup</li><li>Contact form & analytics</li><li>2 rounds of revisions</li></ul>
-            <a href="#contact" class="btn btn--ghost btn--block">Choose Starter</a>
-          </div>
-          <div class="plan plan--featured reveal">
-            <span class="plan__badge">Most popular</span>
-            <h3>Growth</h3>
-            <p class="plan__desc">For businesses ready to scale.</p>
-            <p class="plan__price"><span data-once="4,900" data-monthly="1,290">4,900</span><small class="plan__unit">USD</small></p>
-            <ul><li>Up to 12 custom pages</li><li>Brand refresh & style guide</li><li>CMS so you can edit content</li><li>Advanced SEO & speed tuning</li><li>Unlimited revisions</li></ul>
-            <a href="#contact" class="btn btn--block">Choose Growth</a>
-          </div>
-          <div class="plan reveal">
-            <h3>Enterprise</h3>
-            <p class="plan__desc">For complex products & stores.</p>
-            <p class="plan__price"><span data-once="Custom" data-monthly="Custom">Custom</span></p>
-            <ul><li>Full brand & product design</li><li>E-commerce or web app</li><li>Integrations & automation</li><li>Dedicated team & SLA</li></ul>
-            <a href="#contact" class="btn btn--ghost btn--block">Talk to us</a>
-          </div>
+          <form class="subscribe" id="subscribe" novalidate>
+            <label for="subEmail" class="sr-only">Email address</label>
+            <input type="email" id="subEmail" placeholder="Your email address" autocomplete="email" required />
+            <button type="submit" class="btn">Join now</button>
+          </form>
+          <p class="form-status" id="subStatus" role="status" aria-live="polite"></p>
         </div>
       </div>
     </section>
@@ -240,56 +245,32 @@
       <div class="container">
         <div class="section__head section__head--center reveal">
           <p class="eyebrow">FAQ</p>
-          <h2>Questions, answered.</h2>
+          <h2>Good questions.</h2>
         </div>
         <div class="faq reveal">
-          <details><summary>How long does a website take?</summary><p>Most projects launch in 3–6 weeks depending on scope. We'll give you a clear timeline before we start.</p></details>
-          <details><summary>Will I be able to update the site myself?</summary><p>Yes. We set you up with an easy content editor and a short training session so you're fully in control.</p></details>
-          <details><summary>Do you work with clients worldwide?</summary><p>Absolutely — we work remotely with clients across every time zone.</p></details>
-          <details><summary>What happens after launch?</summary><p>We offer ongoing care plans for updates, hosting, security and growth. You're never on your own.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact reveal">
-          <div class="contact__intro">
-            <p class="eyebrow">Let's talk</p>
-            <h2>Have a project in mind?</h2>
-            <p>Tell us a little about it and we'll get back to you within 24 hours with ideas and next steps.</p>
-            <ul class="contact__list">
-              <li><span>Email</span><a href="mailto:hello@novastudio.com">hello@novastudio.com</a></li>
-              <li><span>Phone</span><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
-            </ul>
-          </div>
-          <form class="form" id="contactForm" novalidate>
-            <div class="form__row">
-              <label>Name<input type="text" name="name" required autocomplete="name" placeholder="Jane Doe" /></label>
-              <label>Email<input type="email" name="email" required autocomplete="email" placeholder="jane@company.com" /></label>
-            </div>
-            <label>Budget
-              <select name="budget">
-                <option>Under $2k</option><option selected>$2k – $5k</option><option>$5k – $15k</option><option>$15k+</option>
-              </select>
-            </label>
-            <label>Project details<textarea name="message" rows="4" required placeholder="Tell us about your goals…"></textarea></label>
-            <button type="submit" class="btn btn--block">Send message <span aria-hidden="true">→</span></button>
-            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-          </form>
+          <details><summary>Are your products good for sensitive skin?</summary><p>Yes — our formulas are fragrance-free and made to be gentle. As with any new skincare, we recommend a patch test first.</p></details>
+          <details><summary>How long until I see results?</summary><p>Many people notice softer, more hydrated skin within days. For tone and texture, give it 4–6 weeks of daily use.</p></details>
+          <details><summary>Can I use Vitamin C with other products?</summary><p>Absolutely. Apply it after cleansing in the morning, then follow with moisturiser and SPF.</p></details>
+          <details><summary>What is your return policy?</summary><p>Not in love? Return it within 30 days for a full refund — even if it's opened.</p></details>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <a href="#top" class="logo"><span class="logo__dot"></span>Nova<span class="muted">Studio</span></a>
-      <p class="muted">© <span id="year"></span> Nova Studio. Crafted with care.</p>
-      <div class="footer__links"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Dribbble</a></div>
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="logo">Velora<span>skin</span></a>
+        <p class="muted">Clean skincare for your natural glow.</p>
+      </div>
+      <div><h4>Shop</h4><a href="#shop">Serums</a><a href="#shop">Moisturisers</a><a href="#shop">Cleansers</a><a href="#shop">SPF</a></div>
+      <div><h4>Help</h4><a href="#quiz">Skin quiz</a><a href="#">Shipping</a><a href="#">Returns</a><a href="mailto:hello@veloraskin.com">Contact us</a></div>
+      <div><h4>Follow</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Pinterest</a></div>
     </div>
+    <p class="container footer__bottom muted">© <span id="year"></span> Velora Skin. All rights reserved.</p>
   </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
 </body>

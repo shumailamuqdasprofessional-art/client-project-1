@@ -1,35 +1,34 @@
-# Nova Studio — Website
+# Velora Skin — Website
 
-A fast, modern, fully responsive single-page website. Pure HTML, CSS and JavaScript — no build step.
+A soft, elegant skincare brand website. Pure HTML, CSS and JavaScript — no build step.
+
+## Pages
+- `index.html` — main shop page
+- `coming-soon.html` — launch / waitlist page
 
 ## Run it
-Open `index.html` in a browser, or serve the folder:
+Open either file in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-## Features
-- Animated starfield hero with glowing orbs and a rotating headline
-- Sticky glass navigation with mobile menu
-- Services cards with spotlight + 3D tilt hover
-- Filterable portfolio grid
-- Animated process timeline and stat counters
-- Auto-rotating testimonials
-- Pricing with one-off / monthly toggle
-- FAQ accordion and validated contact form
-- Respects `prefers-reduced-motion`, keyboard accessible
+## Main page features
+- Hero with CSS-drawn product bottles and floating ingredient tags
+- Bestseller product cards with "Add to bag" and a bag counter
+- Skin quiz: pick Dry / Oily / Combination / Sensitive to see a 3-step routine
+- Hero ingredients, 4-step routine, brand promises, reviews
+- Glow Club newsletter signup (10% off), FAQ, footer
+
+## Coming Soon page features
+- Live countdown — shows a "We're live! Shop now" link when it ends
+- Waitlist email signup (20% off at launch)
+- Collection sneak peek, perks, falling petals, social links
 
 ## Customise
-- Brand name, copy and contact details: `index.html`
+- Brand name, products, prices and copy: the HTML files
 - Colours and fonts: CSS variables at the top of `styles.css`
-- The contact form is front-end only — connect it to a form service (e.g. Formspree) or your backend to receive messages.
-
-## Coming Soon page
-`coming-soon.html` is a launch page with a live countdown, "Notify me" email signup, progress bar, feature teasers and social links.
-
-- Change the launch date: `LAUNCH_DATE` at the top of `coming-soon.js`
-- Change the progress %: `data-value="87"` in `coming-soon.html`
-- When the countdown ends, the page shows a link into the full website.
-- The email form is front-end only — connect it to Mailchimp, Formspree or similar to collect emails.
-- To make it your homepage while you finish the site, rename it to `index.html` (and the main page to something else).
+- Launch date: `LAUNCH_DATE` at the top of `coming-soon.js`
+- Skin quiz routines: the `routines` object in `script.js`
+- **Placeholder content:** reviews, ratings and review counts are examples — replace them with real ones before going live.
+- **Forms and bag are front-end only.** Connect the email forms to Mailchimp/Klaviyo/Formspree and the shop to Shopify or similar for real orders.
