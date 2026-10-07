@@ -14,9 +14,8 @@ python3 -m http.server 8000
 ```
 
 ## Main page features
-- Hero with "Straight from Korea by Canada" message and product illustrations
-- Six skincare series: Hydrating, Anti-Aging, Acne Care, Sunscreen, Brightening & Glowing, Sensitive Skin
-- "Shop the series" tabs with 3 products each and an "Add to bag" counter
+- Hero with "Straight from Korea by Canada" message and the SE monogram in a striped arch
+- Six skincare series, each marked "Coming soon": Hydrating, Anti-Aging, Acne Care, Sunscreen, Brightening & Glowing, Sensitive Skin
 - 5-step K-beauty routine, "Why us", waitlist signup, FAQ
 
 ## Coming Soon page features
@@ -28,6 +27,6 @@ python3 -m http.server 8000
 - Brand name and copy: the HTML files
 - Colours and fonts: CSS variables at the top of `styles.css`
 - Launch date: `LAUNCH_DATE` at the top of `coming-soon.js`
-- Series and products: the `SERIES` list at the top of `script.js`
+- Series (shared by both pages): the `SERIES` list in `series.js`
 - **Placeholder content:** reviews, ratings and review counts are examples — replace them with real ones before going live.
 - **Forms and bag are front-end only.** Connect the email forms to Mailchimp/Klaviyo/Formspree and the shop to Shopify or similar for real orders.

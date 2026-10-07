@@ -102,7 +102,7 @@
           <circle class="g-bubble g-bubble--3" cx="60" cy="380" r="5" />
         </svg>
       </div>
-      <div class="float-tag soon__tag1">🇰🇷 Korean products</div>
+      <div class="float-tag soon__tag1">🇰🇷 Korean skincare</div>
       <div class="float-tag soon__tag2">🍁 Sourced from Canada</div>
       <div class="float-tag soon__tag3">✓ 100% authentic</div>
     </div>
@@ -115,12 +115,10 @@
           <div class="slide__text">
             <p class="eyebrow">Coming soon</p>
             <h2>Korean skincare, now in <em>Pakistan.</em></h2>
-            <p>The K-beauty products you love — essences, toners, sheet masks and more — arriving for the very first time.</p>
+            <p>Six skincare series — Hydrating, Anti-Aging, Acne Care, Sunscreen, Brightening &amp; Glowing and Sensitive Skin — arriving for the very first time.</p>
           </div>
           <div class="slide__art" aria-hidden="true">
-            <div class="pack pack--toner" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Rice<br />Toner</span></div>
-            <div class="pack pack--serum" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Snail<br />Essence</span></div>
-            <div class="pack pack--mask" style="--c1:#f7f2ea;--c2:#d9cdbd"><span>Sheet Mask</span></div>
+            <div class="slide__mono"><img src="images/monogram.png" alt="" width="147" height="205" /></div>
           </div>
         </article>
         <article class="slide slide--dark" aria-roledescription="slide" aria-label="2 of 4">
@@ -131,8 +129,7 @@
           </div>
           <div class="slide__art" aria-hidden="true">
             <svg class="slide__leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.6 3.4 1.9-.9-.6 4.3 2.6-2.4.5 1.6 2.6-.5-1 3 1.4.8-4.6 3.8.5 1.6-4.3-.6V21h-1.2v-4.9l-4.3.6.5-1.6-4.6-3.8 1.4-.8-1-3 2.6.5.5-1.6 2.6 2.4-.6-4.3 1.9.9z"/></svg>
-            <div class="pack pack--cushion" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Cushion</span></div>
-            <div class="pack pack--tube" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Sun<br />Cream</span></div>
+            <div class="route"><span>🇰🇷<small>Korea</small></span><i></i><span>🍁<small>Canada</small></span><i></i><span>🇵🇰<small>Pakistan</small></span></div>
           </div>
         </article>
         <article class="slide slide--taupe" aria-roledescription="slide" aria-label="3 of 4">
@@ -143,7 +140,6 @@
           </div>
           <div class="slide__art" aria-hidden="true">
             <div class="seal"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sealPath1" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" /></defs><text textLength="272" lengthAdjust="spacing"><textPath href="#sealPath1" textLength="272">100% AUTHENTIC · ORIGINAL K-BEAUTY ·</textPath></text></svg><span>✓</span></div>
-            <div class="pack pack--jar" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Cica Cream</span></div>
           </div>
         </article>
         <article class="slide slide--dark" aria-roledescription="slide" aria-label="4 of 4">
@@ -154,7 +150,6 @@
           </div>
           <div class="slide__art" aria-hidden="true">
             <div class="seal"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sealPath2" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" /></defs><text textLength="272" lengthAdjust="spacing"><textPath href="#sealPath2" textLength="272">APPROVED SELLER · EMPRESS BEAUTY BOX ·</textPath></text></svg><span>✓</span></div>
-            <div class="pack pack--pump" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Cleansing<br />Foam</span></div>
           </div>
         </article>
       </div>
@@ -195,13 +190,9 @@
   </section>
 
   <section class="soon__teasers container" aria-labelledby="teaseTitle">
-    <h2 id="teaseTitle" class="reveal">Korean favourites, <em>coming to Pakistan.</em></h2>
-    <div class="teasers">
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🐌</div><h3>Snail Essence</h3><p>The famous K-beauty secret for soft, bouncy skin.</p></article>
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🌾</div><h3>Rice Toner</h3><p>A gentle toner for a clear, glass-skin glow.</p></article>
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🧖‍♀️</div><h3>Sheet Masks</h3><p>Ten minutes of pampering for instant hydration.</p></article>
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">☀️</div><h3>Korean Sun Cream</h3><p>Light, invisible sun protection for every day.</p></article>
-    </div>
+    <p class="eyebrow reveal">The series</p>
+    <h2 id="teaseTitle" class="reveal">Six series, <em>coming soon.</em></h2>
+    <div class="series" data-series-grid></div>
   </section>
 
   <section class="soon__perks container reveal">
@@ -217,9 +208,10 @@
       <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
       <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M11 8.5c3-1 5 .5 4.5 3s-3 3-4 2M11.5 11L9 20"/></svg></a>
     </div>
-    <p class="muted">© <span id="year"></span> The Skin Edit · <a href="mailto:hello@theskinedit.pk">hello@theskinedit.pk</a> · <a href="index.html">Preview the shop</a></p>
+    <p class="muted">© <span id="year"></span> The Skin Edit · <a href="mailto:hello@theskinedit.pk">hello@theskinedit.pk</a> · <a href="index.html">Visit the website</a></p>
   </footer>
 
+  <script src="series.js"></script>
   <script src="coming-soon.js"></script>
 </body>
 </html>

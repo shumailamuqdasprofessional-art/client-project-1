@@ -20,15 +20,11 @@
       <a href="#top" class="brand-img"><img src="images/logo.png" alt="The Skin Edit by Empress Beauty Box" width="695" height="227" /></a>
       <nav class="nav__links" id="navLinks" aria-label="Main">
         <a href="#series">Series</a>
-        <a href="#shop">Shop</a>
         <a href="#routine">K-beauty routine</a>
         <a href="#why">Why us</a>
+        <a href="coming-soon.html">Coming soon</a>
       </nav>
       <div class="nav__actions">
-        <button class="bag" id="bagBtn" aria-label="Shopping bag, 0 items">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
-          <span class="bag__count" id="bagCount">0</span>
-        </button>
         <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
       </div>
     </div>
@@ -42,18 +38,16 @@
         <div class="hero__text">
           <p class="eyebrow reveal">Straight from Korea 🇰🇷 by Canada 🍁</p>
           <h1 class="reveal">Korean skincare for <em>every</em> skin.</h1>
-          <p class="hero__sub reveal">100% authentic K-beauty, now in Pakistan for the first time. Find your perfect series — from deep hydration to clear, glowing skin.</p>
+          <p class="hero__sub reveal">100% authentic K-beauty, now in Pakistan for the first time. Six series for every skin concern — from deep hydration to clear, glowing skin. Coming soon.</p>
           <div class="hero__cta reveal">
-            <a href="#series" class="btn">Shop by series</a>
+            <a href="#series" class="btn">Explore the series</a>
             <a href="coming-soon.html" class="btn btn--ghost">Join the waitlist</a>
           </div>
         </div>
 
         <div class="hero__art reveal" aria-hidden="true">
-          <div class="blob"></div>
-          <div class="pack pack--pump hero__p1" style="--c1:#f7f2ea;--c2:#d9cdbd"><span>Cica<br />Foam</span></div>
-          <div class="pack pack--serum hero__p2" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Snail<br />Essence</span></div>
-          <div class="pack pack--jar hero__p3" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Ceramide Cream</span></div>
+          <div class="arch stripes"></div>
+          <div class="arch__inner"><img class="hero__mono" src="images/monogram.png" alt="" width="147" height="205" /></div>
           <div class="float-tag float-tag--1">🇰🇷 Made in Korea</div>
           <div class="float-tag float-tag--2">✓ 100% authentic</div>
           <div class="float-tag float-tag--3">🍁 Sourced from Canada</div>
@@ -77,20 +71,7 @@
           <h2>What does your skin <em>need?</em></h2>
           <p class="muted">Six series, each made for one skin concern.</p>
         </div>
-        <div class="series" id="seriesGrid"></div>
-      </div>
-    </section>
-
-    <!-- SHOP BY SERIES (tabs) -->
-    <section class="section section--tint" id="shop">
-      <div class="container">
-        <div class="section__head section__head--center reveal">
-          <p class="eyebrow">The collection</p>
-          <h2>Shop the <em>series.</em></h2>
-        </div>
-        <div class="chips chips--center reveal" role="tablist" aria-label="Skincare series" id="seriesTabs"></div>
-        <p class="series-intro reveal" id="seriesIntro"></p>
-        <div class="products" id="productGrid" role="tabpanel" aria-live="polite"></div>
+        <div class="series" data-series-grid></div>
       </div>
     </section>
 
@@ -169,15 +150,14 @@
         <a href="#top" class="brand-img"><img src="images/logo-white.png" alt="The Skin Edit by Empress Beauty Box" width="695" height="227" /></a>
         <p class="muted">Authentic Korean skincare, straight from Korea by Canada.</p>
       </div>
-      <div><h4>Series</h4><a href="#shop" data-series="hydrating">Hydrating</a><a href="#shop" data-series="anti-aging">Anti-Aging</a><a href="#shop" data-series="acne">Acne Care</a><a href="#shop" data-series="sunscreen">Sunscreen</a><a href="#shop" data-series="brightening">Brightening &amp; Glowing</a><a href="#shop" data-series="sensitive">Sensitive Skin</a></div>
+      <div><h4>Series</h4><a href="#series">Hydrating</a><a href="#series">Anti-Aging</a><a href="#series">Acne Care</a><a href="#series">Sunscreen</a><a href="#series">Brightening &amp; Glowing</a><a href="#series">Sensitive Skin</a></div>
       <div><h4>Help</h4><a href="#routine">K-beauty routine</a><a href="coming-soon.html">Waitlist</a><a href="mailto:hello@theskinedit.pk">Contact us</a></div>
       <div><h4>Follow</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a></div>
     </div>
     <p class="container footer__bottom muted">© <span id="year"></span> The Skin Edit by Empress Beauty Box. All rights reserved.</p>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
+  <script src="series.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
