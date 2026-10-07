@@ -1,6 +1,6 @@
-# Velora Skin — Website
+# The Skin Edit by Empress Beauty Box — Website
 
-A soft, elegant skincare brand website. Pure HTML, CSS and JavaScript — no build step.
+Authentic Korean skincare, sourced from Canada — first time in Pakistan. Black, cream, taupe and gold striped brand theme. Pure HTML, CSS and JavaScript — no build step.
 
 ## Pages
 - `index.html` — main shop page
