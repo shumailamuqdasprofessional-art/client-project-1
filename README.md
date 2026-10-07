@@ -14,11 +14,10 @@ python3 -m http.server 8000
 ```
 
 ## Main page features
-- Hero with CSS-drawn product bottles and floating ingredient tags
-- Bestseller product cards with "Add to bag" and a bag counter
-- Skin quiz: pick Dry / Oily / Combination / Sensitive to see a 3-step routine
-- Hero ingredients, 4-step routine, brand promises, reviews
-- Glow Club newsletter signup (10% off), FAQ, footer
+- Hero with "Straight from Korea by Canada" message and product illustrations
+- Six skincare series: Hydrating, Anti-Aging, Acne Care, Sunscreen, Brightening & Glowing, Sensitive Skin
+- "Shop the series" tabs with 3 products each and an "Add to bag" counter
+- 5-step K-beauty routine, "Why us", waitlist signup, FAQ
 
 ## Coming Soon page features
 - Live countdown — shows a "We're live! Shop now" link when it ends
@@ -29,6 +28,6 @@ python3 -m http.server 8000
 - Brand name, products, prices and copy: the HTML files
 - Colours and fonts: CSS variables at the top of `styles.css`
 - Launch date: `LAUNCH_DATE` at the top of `coming-soon.js`
-- Skin quiz routines: the `routines` object in `script.js`
+- Series, products and prices: the `SERIES` list at the top of `script.js`
 - **Placeholder content:** reviews, ratings and review counts are examples — replace them with real ones before going live.
 - **Forms and bag are front-end only.** Connect the email forms to Mailchimp/Klaviyo/Formspree and the shop to Shopify or similar for real orders.
