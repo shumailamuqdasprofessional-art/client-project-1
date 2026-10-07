@@ -1,6 +1,6 @@
 # The Skin Edit by Empress Beauty Box — Website
 
-Authentic Korean skincare, sourced from Canada — first time in Pakistan. Black, cream, taupe and gold striped brand theme. Pure HTML, CSS and JavaScript — no build step.
+Authentic Korean skincare, sourced from Canada — first time in Pakistan. Sephora-style black and white striped theme. Pure HTML, CSS and JavaScript — no build step.
 
 ## Pages
 - `index.html` — main shop page
@@ -14,7 +14,8 @@ python3 -m http.server 8000
 ```
 
 ## Main page features
-- Hero with "Straight from Korea by Canada" message and the SE monogram in a striped arch
+- Opens with the "Coming Soon" hero: waitlist signup and the animated girl in a striped arch
+- Big "Coming Soon" banner: first time in Pakistan, authentic supplier, 100% real products
 - Six skincare series, each marked "Coming soon": Hydrating, Anti-Aging, Acne Care, Sunscreen, Brightening & Glowing, Sensitive Skin
 - 5-step K-beauty routine, "Why us", waitlist signup, FAQ
 
