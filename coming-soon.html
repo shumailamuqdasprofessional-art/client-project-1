@@ -16,6 +16,10 @@
 <body class="soon">
   <div class="petals" id="petals" aria-hidden="true"></div>
 
+  <div class="marquee soon-ticker" aria-label="Highlights">
+    <div class="marquee__track"><span>Coming soon in Pakistan</span><span>✦</span><span>🍁 Straight from Canada</span><span>✦</span><span>100% authentic Korean skincare</span><span>✦</span><span>✓ Approved seller</span><span>✦</span><span>🇰🇷 Original K-beauty brands</span><span>✦</span><span>By Empress Beauty Box</span><span>✦</span><span aria-hidden="true">Coming soon in Pakistan</span><span aria-hidden="true">✦</span><span aria-hidden="true">🍁 Straight from Canada</span><span aria-hidden="true">✦</span><span aria-hidden="true">100% authentic Korean skincare</span><span aria-hidden="true">✦</span><span aria-hidden="true">✓ Approved seller</span><span aria-hidden="true">✦</span><span aria-hidden="true">🇰🇷 Original K-beauty brands</span><span aria-hidden="true">✦</span><span aria-hidden="true">By Empress Beauty Box</span><span aria-hidden="true">✦</span></div>
+  </div>
+
   <header class="soon__top container">
     <a href="#" class="brand" aria-label="The Skin Edit by Empress Beauty Box"><span class="brand__the">The</span><span class="brand__name"><b>S</b>kin Edit</span><span class="brand__by">By Empress Beauty Box <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.6 3.4 1.9-.9-.6 4.3 2.6-2.4.5 1.6 2.6-.5-1 3 1.4.8-4.6 3.8.5 1.6-4.3-.6V21h-1.2v-4.9l-4.3.6.5-1.6-4.6-3.8 1.4-.8-1-3 2.6.5.5-1.6 2.6 2.4-.6-4.3 1.9.9z"/></svg></span></a>
     <a href="#waitlist" class="btn btn--small btn--ghost">Join waitlist</a>
@@ -47,41 +51,133 @@
       <div class="arch stripes"></div>
       <div class="arch__inner">
         <svg class="girl" viewBox="0 0 400 480">
-          <!-- hair -->
-          <circle class="girl__fill" cx="142" cy="112" r="38" />
-          <path class="girl__fill" d="M210 110 C160 96 112 128 112 192 C112 246 136 282 170 304 L178 272 C168 246 172 214 190 200 C200 172 206 146 236 126 C228 116 220 111 210 110 Z" />
-          <!-- face profile -->
-          <path class="girl__line" d="M236 126 C254 138 264 156 264 178 L265 198 C267 210 272 220 282 236 C286 243 282 249 271 250 C269 256 273 259 275 263 C279 267 273 271 268 272 C274 276 274 283 266 287 C266 297 262 307 248 313 C236 319 222 318 212 313" />
-          <!-- eye, brow, ear -->
-          <path class="girl__line" d="M226 204 Q237 211 249 204" />
-          <path class="girl__line girl__thin" d="M230 206 l-4 6 M237 208 l-2 7 M244 207 l0 7" />
-          <path class="girl__line" d="M227 189 Q240 182 254 187" />
-          <path class="girl__line" d="M186 214 C174 214 174 240 188 242" />
-          <!-- neck & shoulders -->
-          <path class="girl__line" d="M178 272 L176 360 C172 384 150 400 104 414 C80 422 66 440 60 470" />
-          <path class="girl__line" d="M212 313 L216 366 C222 392 252 408 300 420 C326 427 342 446 348 470" />
-          <path class="girl__line girl__thin" d="M150 420 C190 438 240 436 280 418" />
-          <!-- earring -->
-          <circle class="girl__gold" cx="186" cy="252" r="5" />
-          <!-- sparkles -->
-          <path class="girl__gold" d="M318 150 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z" />
-          <path class="girl__gold" d="M300 96 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z" />
-          <path class="girl__gold" d="M84 250 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z" />
+          <!-- back hair + bun -->
+          <path class="g-hair" d="M112 220 C96 120 156 84 200 84 C244 84 304 120 288 220 L298 370 C298 392 102 392 102 370 Z" />
+          <g class="g-bun"><circle class="g-hair" cx="200" cy="64" r="40" /><rect class="g-gold" x="176" y="96" width="48" height="8" rx="4" /></g>
+          <!-- neck + top -->
+          <rect class="g-skin-dark" x="178" y="296" width="44" height="70" rx="12" />
+          <path class="g-top" d="M78 480 C84 412 128 380 200 378 C272 380 316 412 322 480 Z" />
+          <path class="g-skin" d="M168 380 Q200 426 232 380 Z" />
+          <path class="g-stripe" d="M110 430 L120 480 M140 410 L146 480 M260 410 L254 480 M290 430 L280 480" />
+          <!-- head -->
+          <g class="g-head">
+            <path class="g-strand" d="M126 196 C110 250 118 300 134 334" />
+            <path class="g-strand g-strand--r" d="M274 196 C290 250 282 300 266 334" />
+            <ellipse class="g-skin" cx="118" cy="234" rx="12" ry="18" />
+            <ellipse class="g-skin" cx="282" cy="234" rx="12" ry="18" />
+            <circle class="g-gold g-earring" cx="118" cy="260" r="5" />
+            <circle class="g-gold g-earring" cx="282" cy="260" r="5" />
+            <ellipse class="g-skin" cx="200" cy="226" rx="82" ry="92" />
+            <path class="g-hair" d="M116 214 C112 142 158 116 200 116 C250 116 290 146 284 214 C270 182 244 162 216 158 C200 178 168 192 136 194 C128 200 120 206 116 214 Z" />
+            <path class="g-brow" d="M148 198 Q165 189 182 195" />
+            <path class="g-brow" d="M218 195 Q235 189 252 198" />
+            <g class="g-eye"><ellipse class="g-iris" cx="166" cy="234" rx="14" ry="17" /><circle class="g-shine" cx="171" cy="227" r="5" /><circle class="g-shine" cx="161" cy="241" r="2.5" /></g>
+            <g class="g-eye"><ellipse class="g-iris" cx="234" cy="234" rx="14" ry="17" /><circle class="g-shine" cx="239" cy="227" r="5" /><circle class="g-shine" cx="229" cy="241" r="2.5" /></g>
+            <path class="g-lash" d="M147 226 Q166 208 185 223 M147 226 l-7 -5" />
+            <path class="g-lash" d="M215 223 Q234 208 253 226 M253 226 l7 -5" />
+            <ellipse class="g-blush" cx="146" cy="268" rx="16" ry="9" />
+            <ellipse class="g-blush" cx="254" cy="268" rx="16" ry="9" />
+            <path class="g-nose" d="M199 252 Q204 259 197 263" />
+            <path class="g-mouth" d="M182 282 Q200 302 218 282 Q200 291 182 282 Z" />
+            <ellipse class="g-glow" cx="238" cy="196" rx="14" ry="7" transform="rotate(-20 238 196)" />
+          </g>
+          <!-- hand holding a serum -->
+          <g class="g-hand">
+            <path class="g-arm" d="M318 480 C316 430 312 392 316 360" />
+            <rect class="g-bottle" x="296" y="270" width="40" height="76" rx="12" />
+            <rect class="g-cap" x="304" y="244" width="24" height="30" rx="8" />
+            <rect class="g-gold" x="300" y="268" width="32" height="7" rx="3" />
+            <text class="g-label" x="316" y="314" text-anchor="middle">K</text>
+            <ellipse class="g-skin" cx="316" cy="344" rx="26" ry="20" />
+            <path class="g-finger" d="M296 336 h20 M296 346 h20" />
+          </g>
+          <!-- sparkles + bubbles -->
+          <path class="g-gold g-spark" d="M80 140 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z" />
+          <path class="g-gold g-spark g-spark--2" d="M330 120 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z" />
+          <path class="g-gold g-spark g-spark--3" d="M70 300 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" />
+          <circle class="g-bubble" cx="96" cy="420" r="8" />
+          <circle class="g-bubble g-bubble--2" cx="350" cy="230" r="6" />
+          <circle class="g-bubble g-bubble--3" cx="60" cy="380" r="5" />
         </svg>
       </div>
-      <div class="float-tag soon__tag1">🇰🇷 Korean beauty</div>
+      <div class="float-tag soon__tag1">🇰🇷 Korean products</div>
       <div class="float-tag soon__tag2">🍁 Sourced from Canada</div>
       <div class="float-tag soon__tag3">✓ 100% authentic</div>
     </div>
   </main>
 
+  <section class="slider container reveal" aria-roledescription="carousel" aria-label="Why The Skin Edit">
+    <div class="slider__viewport" id="slider">
+      <div class="slides">
+        <article class="slide is-active" aria-roledescription="slide" aria-label="1 of 4">
+          <div class="slide__text">
+            <p class="eyebrow">Coming soon</p>
+            <h2>Korean skincare, now in <em>Pakistan.</em></h2>
+            <p>The K-beauty products you love — essences, toners, sheet masks and more — arriving for the very first time.</p>
+          </div>
+          <div class="slide__art" aria-hidden="true">
+            <div class="pack pack--toner" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Rice<br />Toner</span></div>
+            <div class="pack pack--serum" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Snail<br />Essence</span></div>
+            <div class="pack pack--mask" style="--c1:#f7f2ea;--c2:#d9cdbd"><span>Sheet Mask</span></div>
+          </div>
+        </article>
+        <article class="slide slide--dark" aria-roledescription="slide" aria-label="2 of 4">
+          <div class="slide__text">
+            <p class="eyebrow">🍁 Straight from Canada</p>
+            <h2>Sourced in <em>Canada,</em> delivered to you.</h2>
+            <p>Every product is bought from trusted suppliers in Canada and shipped to Pakistan with care.</p>
+          </div>
+          <div class="slide__art" aria-hidden="true">
+            <svg class="slide__leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.6 3.4 1.9-.9-.6 4.3 2.6-2.4.5 1.6 2.6-.5-1 3 1.4.8-4.6 3.8.5 1.6-4.3-.6V21h-1.2v-4.9l-4.3.6.5-1.6-4.6-3.8 1.4-.8-1-3 2.6.5.5-1.6 2.6 2.4-.6-4.3 1.9.9z"/></svg>
+            <div class="pack pack--cushion" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Cushion</span></div>
+            <div class="pack pack--tube" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Sun<br />Cream</span></div>
+          </div>
+        </article>
+        <article class="slide slide--taupe" aria-roledescription="slide" aria-label="3 of 4">
+          <div class="slide__text">
+            <p class="eyebrow">Guaranteed</p>
+            <h2><em>100%</em> authentic skincare.</h2>
+            <p>Only original Korean brands. No fakes, no copies — ever. What you see is exactly what you get.</p>
+          </div>
+          <div class="slide__art" aria-hidden="true">
+            <div class="seal"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sealPath1" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" /></defs><text textLength="272" lengthAdjust="spacing"><textPath href="#sealPath1" textLength="272">100% AUTHENTIC · ORIGINAL K-BEAUTY ·</textPath></text></svg><span>✓</span></div>
+            <div class="pack pack--jar" style="--c1:#fbf8f3;--c2:#e7ddd0"><span>Cica Cream</span></div>
+          </div>
+        </article>
+        <article class="slide slide--dark" aria-roledescription="slide" aria-label="4 of 4">
+          <div class="slide__text">
+            <p class="eyebrow">Trusted</p>
+            <h2>An approved, <em>authentic</em> seller.</h2>
+            <p>Shop with confidence from Empress Beauty Box — real products, honest prices and care you can trust.</p>
+          </div>
+          <div class="slide__art" aria-hidden="true">
+            <div class="seal"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sealPath2" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" /></defs><text textLength="272" lengthAdjust="spacing"><textPath href="#sealPath2" textLength="272">APPROVED SELLER · EMPRESS BEAUTY BOX ·</textPath></text></svg><span>✓</span></div>
+            <div class="pack pack--pump" style="--c1:#fbf8f3;--c2:#e2d6c6"><span>Cleansing<br />Foam</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="slider__controls">
+        <div class="slider__dots" role="tablist" aria-label="Choose slide">
+          <button class="slider__dot is-active" aria-label="Slide 1"></button>
+          <button class="slider__dot" aria-label="Slide 2"></button>
+          <button class="slider__dot" aria-label="Slide 3"></button>
+          <button class="slider__dot" aria-label="Slide 4"></button>
+        </div>
+        <div class="slider__arrows">
+          <button class="slider__arrow" id="slidePrev" aria-label="Previous slide">←</button>
+          <button class="slider__arrow" id="slideNext" aria-label="Next slide">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="soon__teasers container" aria-labelledby="teaseTitle">
-    <h2 id="teaseTitle" class="reveal">A sneak peek at <em>the collection.</em></h2>
+    <h2 id="teaseTitle" class="reveal">Korean favourites, <em>coming to Pakistan.</em></h2>
     <div class="teasers">
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🍊</div><h3>Glow Serum</h3><p>Vitamin C for brighter, more radiant skin.</p></article>
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🌿</div><h3>Velvet Cream</h3><p>Ceramide-rich moisture that feels like silk.</p></article>
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🫧</div><h3>Cloud Cleanser</h3><p>A soft gel that cleans without the tight feeling.</p></article>
-      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">☀️</div><h3>Daily Shield SPF 50</h3><p>Invisible protection, zero white cast.</p></article>
+      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🐌</div><h3>Snail Essence</h3><p>The famous K-beauty secret for soft, bouncy skin.</p></article>
+      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🌾</div><h3>Rice Toner</h3><p>A gentle toner for a clear, glass-skin glow.</p></article>
+      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">🧖‍♀️</div><h3>Sheet Masks</h3><p>Ten minutes of pampering for instant hydration.</p></article>
+      <article class="teaser reveal"><div class="ing__icon" style="--c:#e7ddd0">☀️</div><h3>Korean Sun Cream</h3><p>Light, invisible sun protection for every day.</p></article>
     </div>
   </section>
 
